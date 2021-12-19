@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #181719;
+  color: white;
+  margin: 42px 77px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 85px;
+  padding-right: 85px;
+  @media only screen and (max-width: 860px) {
+    & {
+      margin: 19px 12px;
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width: 385px) {
+    & {
+    }
+  }
+}
+.btn {
+  padding: 8px;
+}
+//nav
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 19px;
+}
+.btn-nav-logo {
+  border: 1px solid #ffffff;
+  width: 102px;
+  height: 32px;
+
+  h2 {
+    margin: 0;
+
+    font-family: "Crimson Pro";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+    width: 86px;
+    height: 16px;
+  }
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  padding: 0;
+  @media only screen and (max-width: 860px) {
+    & {
+      display: none;
+    }
+  }
+  li {
+    margin-right: 86px;
+    margin-left: 0px;
+    padding: 10px;
+    width: 73px;
+
+    a {
+      color: white;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      &:hover {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 170px;
+  @media only screen and (max-width: 860px) {
+    & {
+      margin-top: 38px;
+    }
+  }
+
+  .flex-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media only screen and (max-width: 860px) {
+      & {
+        display: block;
+        margin-top: 38px;
+      }
+    }
+  }
+  .img-box {
+    position: relative;
+    width: 821.11px;
+    height: 586.53px;
+    padding-top: 24px;
+    padding-right: 32.91px;
+    padding-left: 52px;
+    padding-bottom: 0;
+
+    img {
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      width: 736.06px;
+      margin-left: 26px;
+      height: 100%;
+
+      @media only screen and (max-width: 1290px) {
+        & {
+          //outter box
+          padding: 0;
+          margin: 0;
+          width: 40vw;
+          margin-right: 15px;
+        }
+      }
+      @media only screen and (max-width: 860px) {
+        & {
+          width: 100%;
+          margin: 0;
+          margin-right: 15px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1290px) {
+      & {
+        //outter box
+        padding: 0;
+        margin: 0;
+        width: 40vw;
+        margin-right: 15px;
+      }
+    }
+    @media only screen and (max-width: 860px) {
+      & {
+        //outter box
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 25.57px;
+      }
+    }
+  }
+
+  //card
+  .card {
+    width: 410px;
+    height: 189px;
+    position: absolute;
+    top: 501px;
+    right: 64.94px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media only screen and (max-width: 1290px) {
+      & {
+        //card
+        right: 3vw;
+        width: 80%;
+      }
+    }
+    @media only screen and (max-width: 860px) {
+      & {
+        height: 138px;
+        width: 300px;
+        height: 150px;
+      }
+    }
+    @media only screen and (max-width: 385px) {
+      & {
+        //outter box
+        // display: none;
+      }
+    }
+  }
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    .profile-avatar {
+      width: 85px;
+      height: 72px;
+      border-radius: 100%;
+      padding: 15px;
+      transform: rotateY(10deg);
+    }
+  }
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+    h5 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+    h6 {
+      margin-top: 8px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      /* identical to box height */
+
+      /* Gray 3 */
+
+      color: #828282;
+    }
+  }
+  .card-content {
+    width: 286px;
+    height: 62px;
+
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #ffffff;
+
+    margin-left: 26px;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    @media only screen and (max-width: 860px) {
+      & {
+        //outter box
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .content-text-left {
+    margin-right: 10px;
+
+    h2 {
+      width: 365px;
+      height: 61px;
+
+      font-family: "Lora";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 61px;
+
+      color: #ffffff;
+      @media only screen and (max-width: 860px) {
+        & {
+          //outter box
+          margin: 0;
+          padding: 0;
+        }
+      }
+      @media only screen and (max-width: 370px) {
+        & {
+          //outter box
+          font-size: 36px;
+        }
+      }
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+
+      color: #ffffff;
+    }
+  }
+  .read-more {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+}
+
+footer {
+  position: relative;
+  margin-top: 128px;
+
+  p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #a9a9a9;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    a {
+      color: #a9a9a9;
+      font-weight: bold;
+    }
+  }
+}

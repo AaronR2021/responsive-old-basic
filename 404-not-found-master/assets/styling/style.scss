@@ -1,0 +1,136 @@
+//imports
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@500&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+//tags
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  margin: 40px 77px;
+
+  @media only screen and (max-width: 1090px) {
+    & {
+      margin: 20px 24px;
+    }
+  }
+}
+header {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+main {
+  margin-top: 200px;
+  margin-bottom: 308px;
+  margin-right: 119px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media only screen and (max-width: 1070px) {
+    & {
+      margin-right: 0px;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 64px;
+      margin-bottom: 114px;
+    }
+  }
+}
+
+img {
+  max-width: 539.22px;
+  height: 447.43px;
+  margin: 10px;
+}
+
+//classes
+.content-text {
+  h2 {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+
+    margin-bottom: 36px;
+
+    color: #333333;
+
+    @media only screen and (max-width: 1070px) {
+      & {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+
+    margin-bottom: 64px;
+
+    color: #4f4f4f;
+  }
+
+  .btn {
+    padding: 24px 43px;
+  }
+  .btn-homePage {
+    background: #333333;
+    color: #ffffff;
+
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+  }
+}
+
+footer {
+  text-align: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #bdbdbd;
+}
+.footer-resumeOfCreater {
+  font-weight: bold;
+  color: #bdbdbd;
+  &:hover {
+    text-decoration: underline;
+  }
+}
